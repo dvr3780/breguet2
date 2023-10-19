@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, target-densityDpi=device-dpi, minimal-ui' />
+    <title>Brequet - Dan V. Raju</title>
+    <link rel="stylesheet" href="https://use.typekit.net/qly4kjg.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,200;0,300;0,400;1,600&family=Angkor&family=Barlow+Condensed:wght@100;300;400;600;700&family=Familjen+Grotesk:wght@700&family=Katibeh&family=PT+Serif:ital,wght@0,400;0,700;1,700&family=Signika:wght@300;400;600&family=Spectral:ital,wght@0,300;0,400;0,600;0,700;1,200&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="experience">
+      <canvas class="experience-canvas"></canvas>
+    </div>
+
+    <!-- Preloader -->
+    <div class="preloader">
+      <div class="preloader-wrapper">
+        <div class="loading">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page" asscroll-container>
+      <div class="logo">
+        <svg id="Calque_1" class="transition-colors duration-medium fill-black-smokey" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 272.52 202.61"><path class="cls-1" d="M71,174.7c2.39-1.86,2.75-2.27,2.08-3.39l-.52-.88c0-.28.39-.59.64-.47,1.22,1.31,2.64,3,4.56,5.45a11.19,11.19,0,0,1,2.5,4.77A4.73,4.73,0,0,1,78.38,185a5.88,5.88,0,0,1-6.63.12c-.25,0-.4.31-.51.6-1.67,4.52-2.65,7.41-2.75,10.23a3.8,3.8,0,0,0,.64,2.28.26.26,0,0,1-.33.3,5,5,0,0,1-1-1c-1.66-2.13-2-3.9-.88-7.65.42-1.38,1.35-3.75,1.88-5.41a2.26,2.26,0,0,0-.59-2.41c-.87-1.13-.94-1.16-1.47-.75l-3.16,2.46c-2.63,2.05-2.9,2.34-2,4l.34.58a.62.62,0,0,1-.67.44c-.83-1.17-1.46-2-2.24-3s-1.55-1.94-2.52-3.08c0-.21.3-.55.59-.54l.56.57c1.31,1.32,1.67,1.11,4.31-.93Zm-2,4.85c-.45.35-.72.56-.77.72s.23.55,1.23,1.83a5.31,5.31,0,0,0,2.66,2.07A4.55,4.55,0,0,0,76.23,183a4.69,4.69,0,0,0,.74-7c-1.21-1.55-1.37-1.55-2.07-1Z" transform="translate(-33.82 -40.43)"></path><path class="cls-1" d="M83.89,190.09c2.26-2.41,2.54-2.8,1.32-4.25l-.32-.39c-.06-.22.38-.6.59-.54.48.51.9.94,1.34,1.35s.86.85,1.33,1.29l4.36,4.09c1.49,1.39,2.86,2.67,3.2,2.87a37.3,37.3,0,0,1-2.52,3.43c-.23.05-.64-.25-.63-.5.68-1.42,1.23-2.42.31-3.86a15.14,15.14,0,0,0-2.12-2.24l-1.67-1.57c-.7-.65-.74-.61-1.57.28l-4.35,4.64c-.61.65-.54.71.16,1.36l1.34,1.26A11.13,11.13,0,0,0,86.77,199c.36.17.65.19,1.31-.29l1.08-.77c.25,0,.64.34.58.59-.52.55-1.46,1.37-2.29,2.25s-1.51,1.81-2,2.32c-.25.07-.64-.3-.63-.55l.64-1.1a1.36,1.36,0,0,0,.11-1.55,10.52,10.52,0,0,0-1.68-1.79l-1.34-1.26c-.7-.66-.79-.7-1.36-.1l-3.06,3.28c-1.16,1.23-1.83,2.08-1.83,2.82,0,.54.27,1.25,2.31,3.17,1.79,1.67,2.55,2.21,3.3,2.43a8,8,0,0,0,3.76-.7.57.57,0,0,1,.42.7A27.09,27.09,0,0,1,82,210.72c-1-1-2.05-2-3.07-3s-2-2-3.09-2.94l-2.09-2c-1-.93-1.8-1.65-3.22-2.88-.07-.2.23-.62.5-.63l.83.65c1.43,1.12,1.88.88,4.16-1.55Z" transform="translate(-33.82 -40.43)"></path><path class="cls-1" d="M97.36,215.83c-1.87,2.77-2.07,3.18-.64,4.37l.79.64c.08.22-.29.66-.51.63-1.46-1.07-2.34-1.7-3.39-2.41s-2-1.31-3.72-2.39c-.1-.19.15-.67.45-.66l1,.56c1.59.88,2,.58,3.85-2.19l8-11.79c.55-.81.57-.84-.22-1.37l-1.45-1c-1.13-.77-2.62-1.69-3.69-1.53a5.79,5.79,0,0,0-2.41,1,.61.61,0,0,1-.56-.65,33.86,33.86,0,0,0,3.65-3.25c.11,0,.48.21.5.34-.41,1,.48,1.51,1.69,2.33l10.68,7.2c1.42,1,1.69,1.07,2.55.65.17,0,.44.26.42.4a19.1,19.1,0,0,0-3.1,3.74c-.24.14-.69-.17-.72-.41a4,4,0,0,0,.64-2.37,6.24,6.24,0,0,0-2.61-2.72l-1.87-1.27c-.79-.53-.79-.48-1.37.38Z" transform="translate(-33.82 -40.43)"></path><path class="cls-1" d="M109,217a11,11,0,0,1,14.88-5.73c6.72,3,8,9.31,5.71,14.43a10.85,10.85,0,0,1-14.56,5.72C108.58,228.61,106.71,222.27,109,217Zm17.28,8.32c2.12-4.8,2.27-10.92-3.29-13.36-3-1.33-7.87-1-10.67,5.38-1.9,4.31-2.26,10.82,3.48,13.35C119.31,232.25,123.78,231.09,126.3,225.35Z" transform="translate(-33.82 -40.43)"></path><path class="cls-1" d="M150.87,228.15c.42-1.93,1.13-5.51.81-6.56-.14-.42-.65-.76-1.41-1l-.77-.23a.56.56,0,0,1,.23-.73c1.17.31,2.31.6,3.53.86s2.15.43,3.27.61a.54.54,0,0,1-.1.76l-.76-.1a1.82,1.82,0,0,0-1.71.41c-.69.93-1.44,4.51-1.81,6.25l-.77,3.51c-.58,2.7-1.64,5.47-3.78,7a8.43,8.43,0,0,1-6.43,1,9,9,0,0,1-5.44-3c-1.35-1.72-1.64-4.16-.84-7.86l1.6-7.33c.7-3.24.75-3.78-1-4.32l-.76-.24c-.16-.16,0-.67.22-.73,1.55.4,2.6.66,3.84.93s2.31.47,3.84.74c.17.13.11.68-.1.76l-.76-.1c-1.84-.24-2,.28-2.71,3.51L137.58,229c-1.09,5-.25,8.64,4.5,9.67,4.51,1,7-2.19,8-6.91Z" transform="translate(-33.82 -40.43)"></path><path class="cls-1" d="M159.57,225.93c.1-3,0-3.56-1.27-3.76l-1-.17a.52.52,0,0,1,.06-.79c1.78-.1,4-.11,7.09,0a11.14,11.14,0,0,1,5.28,1.14,4.73,4.73,0,0,1,2.48,4.54,5.89,5.89,0,0,1-4.16,5.17c-.17.18,0,.51.13.77,2.4,4.19,4,6.79,6.09,8.68a3.89,3.89,0,0,0,2.16,1,.26.26,0,0,1,0,.44A4.85,4.85,0,0,1,175,243c-2.7-.1-4.29-.95-6.43-4.24-.79-1.2-2-3.44-2.95-4.91a2.27,2.27,0,0,0-2.22-1.09c-1.43-.06-1.5,0-1.52.64l-.14,4c-.12,3.33-.07,3.72,1.76,4l.67.12a.63.63,0,0,1-.09.79c-1.43-.11-2.51-.19-3.78-.23s-2.48-.06-4,0c-.19-.1-.23-.58,0-.79l.79-.07c1.86-.16,1.93-.57,2-3.9Zm2.44,4.64a2.5,2.5,0,0,0,.06,1.05c.09.1.57.18,2.19.24a5.31,5.31,0,0,0,3.3-.71,4.58,4.58,0,0,0,1.73-3.89,4.68,4.68,0,0,0-4.91-5.07c-2-.07-2.07.05-2.1.94Z" transform="translate(-33.82 -40.43)"></path><path class="cls-1" d="M187.31,225.09c-.61-3.25-.76-3.7-2.64-3.58l-.51,0c-.21-.09-.26-.66-.09-.79.7-.1,1.3-.18,1.89-.29s1.19-.19,1.82-.31l5.87-1.09a41.68,41.68,0,0,0,4.21-.89,36.89,36.89,0,0,1,1.27,4.07.61.61,0,0,1-.76.2c-.75-1.38-1.23-2.42-2.94-2.52a15.19,15.19,0,0,0-3.06.38l-2.25.42c-.94.17-.93.24-.71,1.43l1.17,6.25c.17.87.26.85,1.2.68l1.81-.34a11.67,11.67,0,0,0,2.62-.69c.35-.19.54-.42.55-1.23v-1.33c.12-.21.65-.31.81-.12.14.75.25,2,.47,3.18s.56,2.29.69,3a.63.63,0,0,1-.81.18l-.51-1.16a1.37,1.37,0,0,0-1.19-1,10.67,10.67,0,0,0-2.44.29l-1.81.34c-.94.18-1,.23-.87,1l.82,4.41c.31,1.65.6,2.7,1.2,3.14s1.17.52,3.92,0c2.41-.45,3.29-.75,3.91-1.22a7.93,7.93,0,0,0,1.66-3.45.59.59,0,0,1,.82.08,28.13,28.13,0,0,1-.6,4.6c-1.41.24-2.82.47-4.2.73s-2.78.48-4.19.75l-2.81.52c-1.35.25-2.4.48-4.24.89a.63.63,0,0,1-.21-.77l1-.29c1.75-.48,1.82-1,1.21-4.26Z" transform="translate(-33.82 -40.43)"></path><path class="cls-1" d="M224.82,225.42c.34.9,1.68,4.43,2.06,5.17a.56.56,0,0,1-.44.54c-.55-.37-1.8-1.08-5.5-3l-9.88-5.24c-1.15-.62-4.1-2.29-5-2.71l-.06,0a8.73,8.73,0,0,0,.58,2l2.46,6.48c.53,1.4,2.06,5.24,2.87,6a2.15,2.15,0,0,0,1.73,0l1-.26a.6.6,0,0,1,.22.77c-1.36.44-2.42.81-3.52,1.23s-2,.8-3.05,1.26a.59.59,0,0,1-.34-.72l.76-.4c.67-.31,1.06-.7,1.09-1.09,0-1.22-1.4-4.84-1.94-6.27l-3.25-8.59a3,3,0,0,0-1.47-1.9,3.54,3.54,0,0,0-2.12,0l-.52.13c-.25-.11-.42-.55-.23-.76,1.29-.39,2.86-1,3.4-1.19a9.75,9.75,0,0,0,1.33-.61c1.17,1.3,6.2,3.88,7.57,4.62l4.11,2.15c2.9,1.55,5,2.62,7,3.52l.06,0a3.25,3.25,0,0,0-.36-1.3l-2.41-6.36c-.53-1.4-2-5.25-2.93-5.93-.28-.2-.82-.2-2.07.1l-.53.13c-.27-.09-.42-.58-.22-.76,1.39-.46,2.41-.81,3.54-1.24,1.28-.49,2-.81,3-1.25a.54.54,0,0,1,.34.72l-.39.22c-.89.51-1.4,1-1.43,1.25-.1,1.26,1.36,4.93,1.88,6.3Z" transform="translate(-33.82 -40.43)"></path><path class="cls-1" d="M232.19,207.63c-1.63-1-2.4-1.32-3.61-.66l-.51.28a.53.53,0,0,1-.4-.69c.79-.48,1.64-1,2.76-1.82s2-1.47,3.1-2.29a.55.55,0,0,1,.51.61l-.36.33c-.89.82-1,1.13-.87,1.35a38.18,38.18,0,0,0,3.86,2.74c3.31,2.18,6.61,4.33,10,6.39-.4-2.28-1.16-5.75-1.56-7.54-.46-2.32-1.32-6.1-1.67-7.53a3.49,3.49,0,0,0-.47-1.18c-.13-.18-.54-.21-1.52.33l-.51.27a.56.56,0,0,1-.41-.68c.77-.46,1.78-1.13,2.77-1.82s1.64-1.2,2.47-1.86c.26,0,.55.4.51.62l-.74.6a2,2,0,0,0-.72,1.86,76.92,76.92,0,0,0,1.28,8l.84,4.19c.64,3.13,1.54,7,2.06,8.7a.75.75,0,0,1-.23.28,1.34,1.34,0,0,1-.44.19,32.64,32.64,0,0,0-3.63-2.62Z" transform="translate(-33.82 -40.43)"></path><path class="cls-1" d="M252.42,202.32a11,11,0,0,1-.06-15.94c5.15-5.24,11.53-4.15,15.52-.22a10.85,10.85,0,0,1,.17,15.65C263.1,206.84,256.51,206.34,252.42,202.32Zm13.93-13.2c-3.74-3.68-9.41-6-13.67-1.67-2.31,2.36-3.72,7,1.25,11.89,3.36,3.3,9.32,5.95,13.71,1.48C270.31,198.1,270.82,193.51,266.35,189.12Z" transform="translate(-33.82 -40.43)"></path><path class="cls-1" d="M266.66,178c-2.75-1.9-3.2-2.14-4.47-.58l-.51.61c-.21.09-.64-.29-.61-.5,1.06-1.43,1.7-2.3,2.43-3.35s1.29-1.92,2.14-3.27c.19-.1.69.17.69.4l-.38.66c-.94,1.64-.55,2,2.19,3.88l9.11,6.29c1.64,1.14,2.38,1.54,3.2,1.41.49-.09,1.15-.37,2.58-2.44,1.53-2.22,1.81-2.84,1.86-3.42a6.76,6.76,0,0,0-1.39-3.52c0-.25.42-.67.61-.55a26.92,26.92,0,0,1,2.9,3.63c-.48.64-1.18,1.59-1.95,2.71s-1.69,2.39-2.63,3.75l-1.67,2.41c-.76,1.1-1.31,2-2.27,3.46-.19.1-.64-.14-.69-.4l.46-.84c.89-1.63.56-1.93-2.18-3.83Z" transform="translate(-33.82 -40.43)"></path><path class="cls-1" d="M117,49.57c2.83,0,4.05-1.2,4.05-3.64s-1.24-3.7-3.32-3.7a2.47,2.47,0,0,0-1.37.31c-.23.2-.31.59-.31,1.38v5.65Zm3.24.4c2.92.42,5,1.75,5,4.61a5,5,0,0,1-2.58,4.4,11,11,0,0,1-5.54,1.22h-6.45v-.93c2.22-.18,2.43-.38,2.43-2.84V44.92c0-2.48-.17-2.65-2.23-2.85v-.91h7.45a7.15,7.15,0,0,1,4.29,1,4,4,0,0,1,1.56,3.34c0,2.78-2.21,3.94-4,4.36ZM116,56.38c0,2.13.51,2.73,2.13,2.71,1.89,0,3.76-1.24,3.76-4.22s-1.77-4.22-5-4.22H116Z" transform="translate(-33.82 -40.43)"></path><path class="cls-1" d="M134.28,50.89a4,4,0,0,0,2.82-.8,4.42,4.42,0,0,0,1.4-3.56c0-3.16-1.81-4.31-3.62-4.31a2.15,2.15,0,0,0-1.37.29c-.19.17-.26.5-.26,1.2v7.18Zm10.1,9.56-.87,0c-2.72-.1-3.8-.87-5-2.75-.84-1.32-1.69-3-2.49-4.51a2,2,0,0,0-2.1-1.21h-.69v4.48c0,2.44.25,2.68,2.37,2.86v.91H128v-.91c2.14-.18,2.4-.42,2.4-2.86V44.9c0-2.43-.24-2.63-2.28-2.83v-.91h7.16c2.19,0,3.54.27,4.6,1a4.57,4.57,0,0,1,1.82,3.88,5.16,5.16,0,0,1-3.44,4.9c.45.92,1.53,2.86,2.35,4.2a22.47,22.47,0,0,0,2.14,3.11,3.84,3.84,0,0,0,1.82,1.31Z" transform="translate(-33.82 -40.43)"></path><path class="cls-1" d="M159.89,55.46c-.16,1.14-.71,3.85-.95,4.74h-13.5v-.91c2.4-.21,2.64-.42,2.64-2.83V45c0-2.6-.24-2.73-2.29-2.91v-.91h12.48c0,.62.16,2.64.26,4.31l-.89.14a6.7,6.7,0,0,0-1-2.52c-.42-.59-1.16-.79-2.91-.79H152c-.92,0-1,.05-1,1v6.47h2.22c2.41,0,2.65-.19,3-2.22h.87v5.76h-.87c-.35-2.09-.63-2.25-3-2.25H151v5.3c0,1.4.14,2.08.66,2.39a6,6,0,0,0,2.67.34c1.76,0,2.6-.22,3.22-1A9.5,9.5,0,0,0,159,55.3Z" transform="translate(-33.82 -40.43)"></path><path class="cls-1" d="M179,52.15c-1.51.26-1.64.41-1.64,2.25v2.4a14.45,14.45,0,0,0,.19,2.77,26,26,0,0,1-6.16,1.07c-6.16,0-10.18-3.93-10.18-9.77,0-6.75,5-10.15,10.59-10.15a20.3,20.3,0,0,1,5.27.85c.08,1,.22,2.59.43,4.68l-.88.2c-.68-3.44-2.7-4.61-5.29-4.61-3.74,0-6.69,3.24-6.69,8.59,0,4.33,2.17,9.09,7.06,9.09a3.87,3.87,0,0,0,2-.44c.49-.3.75-.71.75-1.77V54.69c0-2.09-.17-2.28-2.92-2.54v-.9H179Z" transform="translate(-33.82 -40.43)"></path><path class="cls-1" d="M198.42,42.07c-1.58.09-2.2.6-2.34,1.73a35.47,35.47,0,0,0-.2,4.41V51c0,3.3-.45,5.8-2,7.55a6.56,6.56,0,0,1-4.95,2.07,7.05,7.05,0,0,1-4.56-1.45c-1.6-1.33-2.34-3.5-2.34-6.93V45.11c0-2.67-.24-2.84-2.33-3v-.91h7.58v.91c-2.07.17-2.3.34-2.3,3v6.52c0,4.56,1.6,7.19,4.79,7.19,3.6,0,4.91-3.1,4.91-8V48.21a29.67,29.67,0,0,0-.24-4.46c-.15-1.09-.75-1.56-2.64-1.68v-.91h6.65Z" transform="translate(-33.82 -40.43)"></path><path class="cls-1" d="M213.4,55.46c-.16,1.14-.71,3.85-1,4.74H199v-.91c2.4-.21,2.64-.42,2.64-2.83V45c0-2.6-.24-2.73-2.29-2.91v-.91h12.48c0,.62.16,2.64.26,4.31l-.89.14a6.7,6.7,0,0,0-1-2.52c-.42-.59-1.15-.79-2.91-.79h-1.73c-.92,0-1,.05-1,1v6.47h2.22c2.41,0,2.65-.19,3-2.22h.87v5.76h-.87c-.35-2.09-.63-2.25-3-2.25h-2.24v5.3c0,1.4.14,2.08.66,2.39a6,6,0,0,0,2.67.34c1.76,0,2.6-.22,3.22-1a9.5,9.5,0,0,0,1.44-2.8Z" transform="translate(-33.82 -40.43)"></path><path class="cls-1" d="M228.59,45.92a7.29,7.29,0,0,0-1-2.83c-.47-.6-1-.79-2.86-.79h-1.59V56.46c0,2.4.24,2.65,2.75,2.83v.91h-8.33v-.91c2.4-.18,2.63-.43,2.63-2.83V42.3h-1.32c-2.26,0-2.76.29-3.16.86a8.73,8.73,0,0,0-1,2.76h-.89c.11-1.93.27-4,.32-5.49h.61c.4.67.75.73,1.52.73h10.86a1.58,1.58,0,0,0,1.47-.73h.61c0,1.28.14,3.64.28,5.4Z" transform="translate(-33.82 -40.43)"></path><path class="cls-1" d="M280.85,137.46A114.48,114.48,0,0,1,271.92,160l26.21-6.65a135.66,135.66,0,0,0,5.92-21.79Z" transform="translate(-33.82 -40.43)"></path><path class="cls-1" d="M59.31,137.56,36.1,131.68A134.65,134.65,0,0,0,42,153.47l26.24,6.66A114,114,0,0,1,59.31,137.56Z" transform="translate(-33.82 -40.43)"></path><path class="cls-1" d="M170.13,91.73a26.18,26.18,0,1,0,26.17,26.18A26.2,26.2,0,0,0,170.13,91.73Zm-.45,1V94a23.92,23.92,0,0,0-19.63,10.92l-1.05-.61A25.15,25.15,0,0,1,169.68,92.77Zm-1.52,7.45v3.63a14.14,14.14,0,0,0-6.58,2.73L159,104A17.67,17.67,0,0,1,168.16,100.22Zm-6.58,29a14,14,0,0,0,6.58,2.73v3.64a17.69,17.69,0,0,1-9.14-3.81Zm-5.51-13.29h-3.63a17.67,17.67,0,0,1,3.8-9.14l2.56,2.56A14.14,14.14,0,0,0,156.07,115.94Zm2.73,10.52L156.24,129a17.71,17.71,0,0,1-3.8-9.15h3.63A14.22,14.22,0,0,0,158.8,126.46Zm-10.93,3.14a25.1,25.1,0,0,1,.06-23.5l1,.61a23.84,23.84,0,0,0-.05,22.29ZM169.07,143a25.13,25.13,0,0,1-20.13-11.6l1-.6a24,24,0,0,0,19.09,11Zm1.06-15.94a9.18,9.18,0,1,1,9.18-9.18A9.18,9.18,0,0,1,170.13,127.09Zm2-23.24v-3.63a17.71,17.71,0,0,1,9.15,3.8l-2.56,2.56A14.22,14.22,0,0,0,172.09,103.85Zm9.15,27.94a17.72,17.72,0,0,1-9.15,3.81V132a14.11,14.11,0,0,0,6.59-2.73ZM171.18,143v-1.2a24,24,0,0,0,18.93-10.74l1,.6A25.14,25.14,0,0,1,171.18,143Zm13-27.09a14,14,0,0,0-2.73-6.58L184,106.8a17.69,17.69,0,0,1,3.81,9.14Zm3.63,3.93A17.62,17.62,0,0,1,184,129l-2.56-2.56a14.11,14.11,0,0,0,2.73-6.59Zm7.47-2a24.94,24.94,0,0,1-3,12l-1-.61a23.91,23.91,0,0,0,.47-21.8l1.05-.61A25,25,0,0,1,195.28,117.91Zm-4.62-12.3A23.94,23.94,0,0,0,171.8,94V92.82A25.17,25.17,0,0,1,191.71,105Z" transform="translate(-33.82 -40.43)"></path><path class="cls-1" d="M170.13,111.05a6.86,6.86,0,1,0,6.86,6.86A6.86,6.86,0,0,0,170.13,111.05Z" transform="translate(-33.82 -40.43)"></path><path class="cls-1" d="M280.66,109.79l-68.45,8.77h0l-1.45.19c-1.11,0-1.91-.52-2.18-2.31h0a38.48,38.48,0,0,0-76.91,0h0c-.27,1.79-1.06,2.3-2.17,2.31l-1.46-.19h0L59.5,109.79l-25.68-3.3A134.35,134.35,0,0,0,34.61,121h0l114.53,29.19h0a38.42,38.42,0,0,0,41.81,0L305.55,121a134.35,134.35,0,0,0,.79-14.53Zm-110.58,35a26.87,26.87,0,1,1,26.33-21.46A26.93,26.93,0,0,1,170.08,144.79Z" transform="translate(-33.82 -40.43)"></path></svg>
+      </div>
+      <section class="clouds">
+        <div class="cloud cloud1"><img src="assets/img/cloud1.webp" /></div>
+        <div class="cloud cloud2"><img src="assets/img/cloud2.webp" /></div>
+        <div class="cloud cloud3"><img src="assets/img/cloud3.webp" /></div>
+        <div class="cloud cloud4"><img src="assets/img/cloud1.webp" /></div>
+        <div class="cloud cloud5"><img src="assets/img/cloud2.webp" /></div>
+        <div class="cloud cloud6"><img src="assets/img/cloud3.webp" /></div>
+        <div class="cloud cloud7"><img src="assets/img/cloud1.webp" /></div>
+        <div class="cloud cloud8"><img src="assets/img/cloud2.webp" /></div>
+        <div class="cloud cloud9"><img src="assets/img/cloud3.webp" /></div>      
+      </section>
+      <section>
+        <div class="timeline">
+          <div class="menu">=</div>
+          <div class="progress-bar"><span class="progress"></span></div>
+
+        </div>
+      </section>
+      <div class="page-wrapper" asscroll>
+        <section>
+          <div class="hero">
+            <div class="company-title"><h2 class="first">Breguet</h2><h2 class="second">Type&nbsp;XX</h2></div>
+            <div class="hero-wrapper"></div>
+            <!-- Intro Stuff -->
+            <div class="first-move"></div>
+            <section class="first-section section">
+              <div class="tile">
+                <div class="watch-models-1">
+                  <img class="watch1" src="assets/img/breguet_watch1.webp"  />
+                  <img class="watch2" src="assets/img/breguet_watch2.webp" />
+                </div>
+              </div>
+            </section>
+            <div class="second-move">
+              <div class="second-tile">
+                <section class="section">
+                    <div class="postcard">
+                        <img class="postcard-img" src="assets/img/breguet-postcard.webp"  />
+                    </div>
+                    <div class="second-move-fadein" >
+                    </div>
+                </section>
+              </div>
+            </div>
+            <div class="details-tile">
+              <section>
+                <div class="postcard-details">
+                    <div class="heading">
+                      <h4>Introduction</h4>
+                      <h2>HISTORY CONTINUES</h2>
+                    </div>
+                    <p>This collection enjoying iconic status for nearly 70 years has accompanied the history of aviation – whether on pilots’ wrists as a precision instrument or on those of ordinary amateur enthusiasts fascinated by its legendary qualities. The Manufacture Breguet proudly unveils a redesigned line that is innovative, highly contemporary and brimming with nods to history.</p>
+                </div>
+              </section>
+            </div>
+            <div class="third-move">
+              <div class="third-tile">
+                <section class="section">
+                    <div class="postcard">
+                      <img class="w2" src="assets/img/breguet_watch2.webp" />
+                      <img class="w1" src="assets/img/breguet_watch1.webp"  />    
+                    </div>
+                    <div class="third-move-fadein" >
+                    </div>
+                </section>
+              </div>
+            </div>
+            <div class="generation-tile">
+              <section>
+                <div class="generation-details">
+                    <div class="heading">
+                      <h2>NEW GENERATION</h2>
+                    </div>
+                    <p>Four years of preparation preceded the arrival of the new generation of iconic Type XX watches, this time, issued in two versions to meet all expectations: one military-inspired and the other drawing on the finest civilian models. Taking cues from emblematic first-generation models, Breguet has instilled a contemporary, dynamic and technological spirit into these watches. The Type XX saga clearly shows no sign of petering out!</p>
+                </div>
+              </section>
+            </div>
+            <div class="fourth-move">
+              <div class="fourth-tile">
+                <section class="section">
+                    <div class="postcard">
+                        <div class="rounded-box">
+                          <div class="overlay"></div>
+
+                        </div>
+                        <h2>1950</h2>
+                        <img class="card" src="assets/img/carte-postale.webp"  />
+                        <img class="airplane" src="assets/img/carte-postale-airplane.webp"  />
+                        <img class="airplane2" src="assets/img/carte-postale-airplane.webp"  />
+
+                    </div>
+                    <div class="fourth-move-fadein" >
+                    </div>
+                </section>
+              </div>
+            </div>
+            <div class="journey-tile">
+              <section>
+                <div class="journey-details">
+                    <div class="heading">
+                      <h4>History</h4>
+                    </div>
+                    <p>The journey of an icon to the heart of aviation history</p>
+                </div>
+              </section>
+            </div>
+            <div class="fifth-move">
+              <div class="fifth-tile">
+                <section class="section">
+                    <div class="postcard">
+                        <div class="rounded-box">
+                          <div class="overlay"></div>
+                        </div>
+                        <div class="scroll-timeline">
+                          <h2 class="y1 chain">1950</h2>
+                          <h2 class="y2 chain">1951</h2>
+                          <h2 class="y3 chain">1952</h2>
+                          <h2 class="y4 chain-last"><span>1</span><span>9</span><span>5</span><span>3</span></h2>
+                        </div>
+                        <img class="airplane2" src="assets/img/carte-postale-airplane.webp"  />
+                    </div>
+                    <div class="fifth-move-fadein" >
+                    </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="third-move-exit"></div>
+        <div class="section-margin"></div>
+        <div class="section-margin"></div>
+
+        <!--
+        <div class="second-move section-margin"></div>
+
+        <section class="second-section section work">
+          
+          <div class="section-detail-wrapper cards">
+            
+          </div>
+        </section>
+        <div class="third-move section-margin"></div>
+        <section class="third-section section">
+          
+          <div class="section-intro-wrapper green-text green-border">
+          </div>
+
+          <div class="section-detail-wrapper">
+          </div>
+        </section>
+      -->
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script type="application/x-glsl" id="sky-vertex">
+      varying vec2 vUV;
+      
+      void main() {
+        vUV = uv;
+        vec4 pos = vec4(position, 1.0);
+        gl_Position = projectionMatrix * modelViewMatrix * pos;
+      }
+      </script>
+      
+      <script type="application/x-glsl" id="sky-fragment">
+      uniform sampler2D texture;
+      varying vec2 vUV;
+      
+      void main() {
+        vec4 sample = texture2D(texture, vUV);
+        gl_FragColor = vec4(sample.xyz, sample.w);
+      }
+      </script>
+    <script type="module" src="/main.js"></script> 
+    <script>
+      document.addEventListener("DOMContentLoaded", function(event) { 
+          var firstText = document.querySelector('h2.first').innerText;
+          var output = "";
+          window.docHeight = (document.height !== undefined) ? document.height : $('.page-wrapper').height();
+
+          for(var i=0; i<firstText.length;i++){
+            //firstText[i];
+            output += "<span class='animated-text' style='animation: reveal "+ (i+1.2) + "s cubic-bezier(0.77, 0, 0.175, 1) 0.8s forwards;'>" + firstText[i] + "</span>"; 
+          }
+          document.querySelector('.company-title .first').innerHTML = output;
+
+          var secondText = document.querySelector('h2.second').innerText;
+          var output = "";
+          for(var i=0; i<secondText.length;i++){
+            //firstText[i];
+            output += "<span class='animated-text' style='animation: reveal "+ (i+1.8) + "s cubic-bezier(0.77, 0, 0.175, 1) 0.8s forwards;'>" + secondText[i] + "</span>"; 
+          }
+          document.querySelector('.company-title .second').innerHTML = output;
+          
+          //firstText;
+          $('.cloud1').css({
+              'top': window.innerHeight*.60, 
+              //'left': $(this).scrollLeft() + 15 
+                //Why this 15, because in the CSS, we have set left 15, so as we scroll, we would want this to remain at 15px left
+          });
+          $('.cloud2').css({
+              'top': window.innerHeight*.60, 
+              //'left': $(this).scrollLeft() + 15 
+                //Why this 15, because in the CSS, we have set left 15, so as we scroll, we would want this to remain at 15px left
+          });
+          $('.cloud3').css({
+              'top': window.innerHeight*.60, 
+              //'left': $(this).scrollLeft() + 15 
+                //Why this 15, because in the CSS, we have set left 15, so as we scroll, we would want this to remain at 15px left
+          });
+          $('.cloud4').css({
+              'top': window.innerHeight*.60, 
+              //'left': $(this).scrollLeft() + 15 
+                //Why this 15, because in the CSS, we have set left 15, so as we scroll, we would want this to remain at 15px left
+          });
+          $('.cloud5').css({
+              'top': window.innerHeight*.60, 
+              //'left': $(this).scrollLeft() + 15 
+                //Why this 15, because in the CSS, we have set left 15, so as we scroll, we would want this to remain at 15px left
+          });
+          $('.cloud6').css({
+              'top': window.innerHeight*.60, 
+              //'left': $(this).scrollLeft() + 15 
+                //Why this 15, because in the CSS, we have set left 15, so as we scroll, we would want this to remain at 15px left
+          });
+          $('.cloud7').css({
+              'top': window.innerHeight*.60, 
+              //'left': $(this).scrollLeft() + 15 
+                //Why this 15, because in the CSS, we have set left 15, so as we scroll, we would want this to remain at 15px left
+          });
+          $('.cloud8').css({
+              'top': window.innerHeight*.60, 
+              //'left': $(this).scrollLeft() + 15 
+                //Why this 15, because in the CSS, we have set left 15, so as we scroll, we would want this to remain at 15px left
+          });
+          $('.cloud9').css({
+              'top': window.innerHeight*.60, 
+              //'left': $(this).scrollLeft() + 15 
+                //Why this 15, because in the CSS, we have set left 15, so as we scroll, we would want this to remain at 15px left
+          });
+          $('.first-section').css({
+              'top': window.innerHeight * .0001,
+          });
+      });
+  </script>
+  </body>
+</html>
