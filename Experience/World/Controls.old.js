@@ -424,7 +424,7 @@ export default class Controls {
                 GSAP.to(".second-move .heading", {
                     scrollTrigger: {
                         trigger: ".second-move .details-tile",
-                        markers: true,
+                        //markers: true,
                         start: "bottom 0%",
                         end: "bottom 100%",
                         pin: ".second-move .details-tile",
@@ -472,7 +472,7 @@ export default class Controls {
                 GSAP.to(".third-move .heading", {
                     scrollTrigger: {
                         trigger: ".third-move .details-tile",
-                        markers: true,
+                        //markers: true,
                         start: "bottom 0%",
                         end: "bottom 100%",
                         pin: ".third-move .details-tile",

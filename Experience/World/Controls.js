@@ -727,7 +727,7 @@ export default class Controls {
                         scrollTrigger: {
                             containerAnimation: fakeHorizontal,
                             trigger: year,
-                            markers: true,
+                            //markers: true,
                             start: "left 60%",
                             //pin: true,
                             end: () => "left 40%",

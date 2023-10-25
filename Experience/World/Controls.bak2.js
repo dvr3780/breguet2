@@ -208,7 +208,7 @@ export default class Controls {
                         //pin: ".hero",
                         end: "bottom 0%",
                         scrub: 0.6,
-                        markers: true,
+                        //markers: true,
                         invalidateOnRefresh: true,
                     },
                     onComplete: () => revertState(state)
@@ -408,7 +408,7 @@ export default class Controls {
                 GSAP.to(".second-move .details-tile", {
                     scrollTrigger: {
                         trigger: ".second-move",
-                        markers: true,
+                        //markers: true,
                         start: "bottom 100%",
                         end: "bottom 50%",
                         pin: ".second-move .details-tile",
